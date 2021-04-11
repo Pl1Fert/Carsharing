@@ -143,6 +143,39 @@ li{
     font-size: 16px;
 }
 
+.top__slider__inner{
+    position: relative;
+}
+
+.dots{
+   position: absolute; 
+   right: 0;
+   top: 50%;
+   display: flex;
+   flex-direction: column;
+}
+
+.dot{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #332208;
+    margin: 8px 5px 0 0;
+    border-radius: 50%;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.top__slider-item{
+    display: none;
+    transition: all .3s;
+}
+
+.active , .dot:hover{
+    width: 16px;
+    height: 16px;
+}
+
 /*  Top bottom  */
 
 .top__bottom{
@@ -374,4 +407,6 @@ li{
 .advantages__list-item:nth-child(4){
     margin-right: 158px;
 }
+
+/*  Reviews  */
 
