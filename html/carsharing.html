@@ -1,263 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
-    <link href="../css/carsharing_style.css" rel="stylesheet" />
-    <title>LUX carsharing</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a href="#" class="logo">
-            <img src="../img_carsharing/lux logoo.jpg " alt="logo" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap"
+    rel="stylesheet" />
+  <link href="../css/carsharing_style.css" rel="stylesheet" />
+  <title>LUX carsharing</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="logo">
+          <img src="../img_carsharing/lux logoo.jpg " alt="logo" />
+        </a>
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">О НАС</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">АВТОПАРК</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">ОТЗЫВЫ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">УСЛОВИЯ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:380999999090" class="phone"> +38 (099) 999 90 90 </a>
+      </div>
+    </div>
+  </header>
+  <section class="top">
+    <div class="container">
+      <div class="top__heading">
+        <div class="top__content">
+          <h1 class="top__title">Каршеринг в Киеве LUX автомобили</h1>
+          <p class="top__text">
+            Закажи эксклюзивный автомобиль через мобильное приложение в любой
+            точке города
+          </p>
+          <a href="#" class="top__btn">Скачать приложение</a>
+        </div>
+        <div class="top__slider">
+          <div class="top__slider__inner">
+            <div class="top__slider-item">
+              <img class="top__slider-img" src="../img_carsharing/car_img_slider.jpg" alt="car" />
+              <p class="top__slider-text">
+                4 грн/мин <span>5 мест</span> 50 тыс. км пробег
+              </p>
+            </div>
+            <div class="top__slider-item">
+              <img class="top__slider-img" src="../img_carsharing/Car_girl.jpg" alt="car" />
+              <p class="top__slider-text">
+                5 грн/мин <span>5 мест</span> 50 тыс. км пробег
+              </p>
+            </div>
+            <div class="top__slider-item">
+              <img class="top__slider-img" src="../img_carsharing/car_img_slider.jpg" alt="car" />
+              <p class="top__slider-text">
+                6 грн/мин <span>5 мест</span> 50 тыс. км пробег
+              </p>
+            </div>
+            <div class="top__slider-item">
+              <img class="top__slider-img" src="../img_carsharing/Car_girl.jpg" alt="car" />
+              <p class="top__slider-text">
+                7 грн/мин <span>5 мест</span> 50 тыс. км пробег
+              </p>
+            </div>
+            <div class="top__slider-dots">
+              <div class="top__slider-dot" onclick="currentSlide(1)"></div>
+              <div class="top__slider-dot" onclick="currentSlide(2)"></div>
+              <div class="top__slider-dot" onclick="currentSlide(3)"></div>
+              <div class="top__slider-dot" onclick="currentSlide(4)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top__bottom">
+        <div class="top__bottom-blocks">
+          <div class="top__bottom-block">
+            <img src="../img_carsharing/block_logo_car.svg" alt="car_logo" />
+            <p class="top__bottom-block-text">
+              Более 300 автомобилей в вашем распоряжении
+            </p>
+          </div>
+          <div class="top__bottom-block">
+            <img src="../img_carsharing/block_logo_creditcard.svg" alt="creditcard_logo" />
+            <p class="top__bottom-block-text">
+              Дешевле такси и собственного автомобиля
+            </p>
+          </div>
+          <div class="top__bottom-block">
+            <img src="../img_carsharing/block_logo_map.svg" alt="map_logo" />
+            <p class="top__bottom-block-text">
+              Лучшие автомобили в любой точке города
+            </p>
+          </div>
+        </div>
+        <div class="top__bottom-links">
+          <a href="#" class="top__link">Условия аренды автомобиля </a>
+          <a href="#" class="top__link">Публичный договор</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="rent">
+    <div class="container">
+      <div class="rent__inner">
+        <div class="rent__content">
+          <h2 class="rent__title">Условия аренды автомобиля</h2>
+          <p class="rent__text">
+            Мы ценим каждого клиента и предоставляем качественный сервис
+            каршеринга в Киеве.
+          </p>
+          <p class="rent__text rent__text__bottom">
+            Именно для того, что бы Вам было приятно и безопасно пользоваться
+            нашим сервисом на постоянной основе, мы выделили несколько условий
+            для того, чтобы взять машину в аренду
+          </p>
+          <a href="#" class="rent__btn">Скачать приложение</a>
+        </div>
+        <div class="rent__items">
+          <div class="rent__item">
+            <img src="../img_carsharing/01.jpg" alt="01" />
+            <h3 class="rent__item-title">Опыт вождения от 2х лет</h3>
+            <p class="rent__item-text">
+              Для того, чтобы арендовать автомобиль, Вам необходимо
+              зарегестрировать свои прав в нашем мобильном приложении
+            </p>
+          </div>
+          <div class="rent__item rent__item-middle">
+            <img src="../img_carsharing/02.jpg" alt="02" />
+            <h3 class="rent__item-title">Только по Киеву</h3>
+            <p class="rent__item-text">
+              Наши автомобили работают только в пределах города Киев. За город
+              на наших автомобилях, к сожалению, выезжать нельзя.
+            </p>
+          </div>
+          <div class="rent__item">
+            <img src="../img_carsharing/03.jpg" alt="03" />
+            <h3 class="rent__item-title">Мобильный телефон и интернет</h3>
+            <p class="rent__item-text">
+              Для использования нашего сервиса Вам необходим мобильный телефон
+              и интернет. Бронирование, оплата и вся отчетность происходит
+              онлайн
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      <h2 class="advantages__title">Преимущества</h2>
+      <div class="advantages__items">
+        <div class="advantages__item">
+          <ul class="advantages__list">
+            <li class="advantages__list-item">мойка авто каждую неделю</li>
+            <li class="advantages__list-item">премиум автомобили</li>
+            <li class="advantages__list-item">мощный двигатель</li>
+            <li class="advantages__list-item">поддержка 24/7</li>
+            <li class="advantages__list-item">бензин за наш счет</li>
+            <li class="advantages__list-item">парковка по всему городу</li>
+            <li class="advantages__list-item">каждый месяц ТО автомобиля</li>
+          </ul>
+        </div>
+        <div class="advantages__item">
+          <img src="../img_carsharing/Car_advantages.jpg" alt="advantages__car" />
+        </div>
+        <div class="advantages__item">
+          <p class="advantages__item-text">
+            Вы можете выбрать один из 300 наших автомобилей, насладиться
+            сервисом, повысить уровень жизни, не покупая дорогой автомобиль,
+            успевать везде и каждый день ездить на новом премиум автомобиле.
+          </p>
+          <p class="advantages__item-text">
+            Посмотрите видео презентацию <br />нашего сервиса и выберите
+            <br />автомобиль уже сейчас!
+          </p>
+          <a href="#" class="advantages__btn">
+            ПОСМОТРЕТЬ<br />
+            ПРЕЗЕНТАЦИЮ
           </a>
-          <nav class="navbar">
-            <ul class="navbar__list">
-              <li class="nav__item">
-                <a href="#" class="nav__link">О НАС</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">АВТОПАРК</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">ОТЗЫВЫ</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">УСЛОВИЯ</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">КОНТАКТЫ</a>
-              </li>
-            </ul>
-          </nav>
-          <a href="tel:380999999090" class="phone"> +38 (099) 999 90 90 </a>
         </div>
       </div>
-    </header>
-    <section class="top">
-      <div class="container">
-        <div class="top__heading">
-          <div class="top__content">
-            <h1 class="top__title">Каршеринг в Киеве LUX автомобили</h1>
-            <p class="top__text">
-              Закажи эксклюзивный автомобиль через мобильное приложение в любой
-              точке города
-            </p>
-            <a href="#" class="top-btn-download">Скачать приложение</a>
-          </div>
-          <div class="top__slider">
-            <div class="top__slider__inner">
-              <div class="top__slider-item">
-                <img
-                  class="top__slider-img"
-                  src="../img_carsharing/car_img_slider.jpg"
-                  alt="car"
-                />
-                <p class="top__slider-text">
-                  4 грн/мин <span>5 мест</span> 50 тыс. км пробег
-                </p>
-              </div>
-              <div class="top__slider-item">
-                <img
-                  class="top__slider-img"
-                  src="../img_carsharing/Car_girl.jpg"
-                  alt="car"
-                />
-                <p class="top__slider-text">
-                  5 грн/мин <span>5 мест</span> 50 тыс. км пробег
-                </p>
-              </div>
-              <div class="top__slider-item">
-                <img
-                  class="top__slider-img"
-                  src="../img_carsharing/car_img_slider.jpg"
-                  alt="car"
-                />
-                <p class="top__slider-text">
-                  6 грн/мин <span>5 мест</span> 50 тыс. км пробег
-                </p>
-              </div>
-              <div class="top__slider-item">
-                <img
-                  class="top__slider-img"
-                  src="../img_carsharing/Car_girl.jpg"
-                  alt="car"
-                />
-                <p class="top__slider-text">
-                  7 грн/мин <span>5 мест</span> 50 тыс. км пробег
-                </p>
-              </div>
-              <div class="top__slider-dots">
-                <div class="top__slider-dot" onclick="currentSlide(1)"></div>
-                <div class="top__slider-dot" onclick="currentSlide(2)"></div>
-                <div class="top__slider-dot" onclick="currentSlide(3)"></div>
-                <div class="top__slider-dot" onclick="currentSlide(4)"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="top__bottom">
-          <div class="top__bottom-blocks">
-            <div class="top__bottom-block">
-              <img src="../img_carsharing/block_logo_car.svg" alt="car_logo" />
-              <p class="top__bottom-block-text">
-                Более 300 автомобилей в вашем распоряжении
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <div class="reviews__inner">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__slider">
+          <div class="review__slider-inner">
+            <div class="reviews__slider-item">
+              <h2 class="review__author">Михаил, 28 лет</h2>
+              <p class="review__text">
+                Очень рад, что Вы есть! Пока еще бэху купить не могу, но
+                покататься взять - это отличная возможность! Такое ощущение, что
+                у меня личный огромный автопарк элитных тачек)))
               </p>
             </div>
-            <div class="top__bottom-block">
-              <img
-                src="../img_carsharing/block_logo_creditcard.svg"
-                alt="creditcard_logo"
-              />
-              <p class="top__bottom-block-text">
-                Дешевле такси и собственного автомобиля
+            <div class="reviews__slider-item">
+              <h2 class="review__author">Инна, 35 лет</h2>
+              <p class="review__text">
+                Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только на
+                Ваших машинах. Удобно, что расчет по минутам, это экономит
+                бюджет компании.
               </p>
             </div>
-            <div class="top__bottom-block">
-              <img src="../img_carsharing/block_logo_map.svg" alt="map_logo" />
-              <p class="top__bottom-block-text">
-                Лучшие автомобили в любой точке города
+            <div class="reviews__slider-item">
+              <h2 class="review__author">Игорь, 25 лет</h2>
+              <p class="review__text">
+                Ребята, Вы ТОПЧИК! Брал машину на свидание, покатал девушку, она
+                в восторге, я доволен, все счастливы)
               </p>
             </div>
-          </div>
-          <div class="top__bottom-links">
-            <a href="#" class="top__link">Условия аренды автомобиля </a>
-            <a href="#" class="top__link">Публичный договор</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="rent">
-      <div class="container">
-        <div class="rent__inner">
-          <div class="rent__content">
-            <h2 class="rent__title">Условия аренды автомобиля</h2>
-            <p class="rent__text">
-              Мы ценим каждого клиента и предоставляем качественный сервис
-              каршеринга в Киеве.
-            </p>
-            <p class="rent__text rent__text__bottom">
-              Именно для того, что бы Вам было приятно и безопасно пользоваться
-              нашим сервисом на постоянной основе, мы выделили несколько условий
-              для того, чтобы взять машину в аренду
-            </p>
-            <a href="#" class="rent-btn">Скачать приложение</a>
-          </div>
-          <div class="rent__items">
-            <div class="rent__item">
-              <img src="../img_carsharing/01.jpg" alt="01" />
-              <h3 class="rent__item-title">Опыт вождения от 2х лет</h3>
-              <p class="rent__item-text">
-                Для того, чтобы арендовать автомобиль, Вам необходимо
-                зарегестрировать свои прав в нашем мобильном приложении
+            <div class="reviews__slider-item">
+              <h2 class="review__author">Марина, 30 лет</h2>
+              <p class="review__text">
+                Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу
+                машину поблизости. Всегда чистая, свежая, приятно садиться в
+                нее. До работы или на шопинг еду с комфортом.
               </p>
             </div>
-            <div class="rent__item rent__item-middle">
-              <img src="../img_carsharing/02.jpg" alt="02" />
-              <h3 class="rent__item-title">Только по Киеву</h3>
-              <p class="rent__item-text">
-                Наши автомобили работают только в пределах города Киев. За город
-                на наших автомобилях, к сожалению, выезжать нельзя.
-              </p>
-            </div>
-            <div class="rent__item">
-              <img src="../img_carsharing/03.jpg" alt="03" />
-              <h3 class="rent__item-title">Мобильный телефон и интернет</h3>
-              <p class="rent__item-text">
-                Для использования нашего сервиса Вам необходим мобильный телефон
-                и интернет. Бронирование, оплата и вся отчетность происходит
-                онлайн
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="advantages">
-      <div class="container">
-        <h2 class="advantages__title">Преимущества</h2>
-        <div class="advantages__items">
-          <div class="advantages__item">
-            <ul class="advantages__list">
-              <li class="advantages__list-item">мойка авто каждую неделю</li>
-              <li class="advantages__list-item">премиум автомобили</li>
-              <li class="advantages__list-item">мощный двигатель</li>
-              <li class="advantages__list-item">поддержка 24/7</li>
-              <li class="advantages__list-item">бензин за наш счет</li>
-              <li class="advantages__list-item">парковка по всему городу</li>
-              <li class="advantages__list-item">каждый месяц ТО автомобиля</li>
-            </ul>
-          </div>
-          <div class="advantages__item">
-            <img
-              src="../img_carsharing/Car_advantages.jpg"
-              alt="advantages__car"
-            />
-          </div>
-          <div class="advantages__item">
-            <p class="advantages__item-text">
-              Вы можете выбрать один из 300 наших автомобилей, насладиться
-              сервисом, повысить уровень жизни, не покупая дорогой автомобиль,
-              успевать везде и каждый день ездить на новом премиум автомобиле.
-            </p>
-            <p class="advantages__item-text">
-              Посмотрите видео презентацию <br />нашего сервиса и выберите
-              <br />автомобиль уже сейчас!
-            </p>
-            <a href="#" class="advantages-btn">
-              ПОСМОТРЕТЬ<br />
-              ПРЕЗЕНТАЦИЮ
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="container">
-        <div class="reviews__inner">
-          <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__slider">
-            <div class="review__slider-inner">
-              <div class="reviews__slider-item">
-                <h2 class="review__author">Михаил, 28 лет</h2>
-                <p class="review__text">
-                  Очень рад, что Вы есть! Пока еще бэху купить не могу, но
-                  покататься взять - это отличная возможность! Такое ощущение, что
-                  у меня личный огромный автопарк элитных тачек)))
-                </p>
-              </div>
-              <div class="reviews__slider-item">
-                <h2 class="review__author">Инна, 35 лет</h2>
-                <p class="review__text">
-                  Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только на
-                  Ваших машинах. Удобно, что расчет по минутам, это экономит
-                  бюджет компании.
-                </p>
-              </div>
-              <div class="reviews__slider-item">
-                <h2 class="review__author">Игорь, 25 лет</h2>
-                <p class="review__text">
-                  Ребята, Вы ТОПЧИК! Брал машину на свидание, покатал девушку, она
-                  в восторге, я доволен, все счастливы)
-                </p>
-              </div>
-              <div class="reviews__slider-item">
-                <h2 class="review__author">Марина, 30 лет</h2>
-                <p class="review__text">
-                  Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу
-                  машину поблизости. Всегда чистая, свежая, приятно садиться в
-                  нее. До работы или на шопинг еду с комфортом.
-                </p>
-              </div>
-              <!--
+            <!--
               <div class="reviews__slider-item">
                 <h2 class="review__author">Григорий, 45 лет</h2>
                 <p class="review__text">
@@ -301,61 +279,62 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="feedback">
-      <div class="container">
-        <div class="feedback__inner">
-          <div class="feedback__image">
-            <img src="../img_carsharing/Car_girl.jpg" alt="">
-          </div>
-          <form class="feedback__form">
-            <h2 class="feedback__form-title">
-              Остались вопросы?
-            </h2>
-            <p class="feedback__form-text">
-              Мы перезвоним Вам и проконсультируем по любому вопросу
-            </p>
-            <input type="text" class="feedback__form-input" placeholder="Имя">
-            <input type="text" class="feedback__form-input" placeholder="Телефон">
-            <a class="feedback__btn">ОСТАВИТЬ ЗАЯВКУ</a>
-          </form>
+  </section>
+  <section class="feedback">
+    <div class="container">
+      <div class="feedback__inner">
+        <div class="feedback__image">
+          <img src="../img_carsharing/Car_girl.jpg" alt="">
+        </div>
+        <form class="feedback__form">
+          <h2 class="feedback__form-title">
+            Остались вопросы?
+          </h2>
+          <p class="feedback__form-text">
+            Мы перезвоним Вам и проконсультируем по любому вопросу
+          </p>
+          <input type="text" class="feedback__form-input" placeholder="Имя">
+          <input type="text" class="feedback__form-input" placeholder="Телефон">
+          <a href="#" class="feedback__btn">ОСТАВИТЬ ЗАЯВКУ</a>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#" class="footer__btn">
+          Скачать приложение
+        </a>
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">О НАС</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">АВТОПАРК</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">ОТЗЫВЫ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">УСЛОВИЯ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:380999999090" class="phone"> +38 (099) 999 90 90 </a>
+        <div class="footer__logo-block">
+          <a href="#" class="footer__logo"><img src="../img_carsharing/facebook_logo.svg" alt=""></a>
+          <a href="#" class="footer__logo"><img src="../img_carsharing/instagram_logo.svg" alt=""></a>
+          <a href="#" class="footer__logo"><img src="../img_carsharing/youtube_logo.svg" alt=""></a>
         </div>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <a href="#" class="footer-btn">
-            Скачать приложение
-          </a>
-          <nav class="navbar">
-            <ul class="navbar__list">
-              <li class="nav__item">
-                <a href="#" class="nav__link">О НАС</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">АВТОПАРК</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">ОТЗЫВЫ</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">УСЛОВИЯ</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">КОНТАКТЫ</a>
-              </li>
-            </ul>
-          </nav>
-          <a href="tel:380999999090" class="phone"> +38 (099) 999 90 90 </a>
-          <div class="footer__logo-block">
-            <a href="#" class="footer__logo"><img src="../img_carsharing/facebook_logo.svg" alt=""></a>
-            <a href="#" class="footer__logo"><img src="../img_carsharing/instagram_logo.svg" alt=""></a>
-            <a href="#" class="footer__logo"><img src="../img_carsharing/youtube_logo.svg" alt=""></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="../js/script.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
 </html>
