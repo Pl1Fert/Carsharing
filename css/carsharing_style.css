@@ -66,8 +66,6 @@ li{
     display: flex;
 }
 
-
-
 .nav__item{
     margin: 0 15px;
 }
@@ -82,6 +80,8 @@ li{
 }
 
 /*  Top  */
+
+
 .top{
     padding: 0 0 100px 0;
 }
@@ -92,7 +92,9 @@ li{
     margin: 50px 0;
 }
 
+
 /*  Top content  */
+
 
 .top__content{
     width: 50%;
@@ -126,7 +128,9 @@ li{
     border:1px solid #C5AC2D;
 }
 
+
 /*  Top slider  */
+
 
 .top__slider{
     width: 50%;
@@ -450,7 +454,6 @@ li{
     padding: 45px 30px;
     text-align: center;
     transition: all .3s;
-    display: none;
 }
 
 .reviews__slider-item:hover{
@@ -477,4 +480,116 @@ li{
      border-radius: 50%;
      transition: all .3s;
      cursor: pointer;
+}
+
+
+ /*  Feedback  */
+
+
+.feedback{
+     background-color: #FEFEFE;
+     padding: 100px 0;
  }
+
+.feedback__inner{
+     display: flex;
+ }
+
+.feedback__image{
+     width: 50%;
+ }
+
+.feedback__form{
+     width: 50%;
+     text-align: left;
+     padding: 74px 90px;
+ }
+
+.feedback__form-text{
+    margin: 5px 0 50px 0;
+ }
+
+.feedback__form-input{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+ }
+
+ .feedback__form-input + .feedback__form-input{
+    margin-bottom: 50px;
+ }
+
+.feedback__btn{
+    background-color:#C5AC2D;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border:1px solid transparent;
+    transition: all .3s;
+    align-items: center;
+    padding:15px 36px;
+}
+
+.feedback__btn:hover{
+    background-color:#FEFEFE;
+    color:#C5AC2D;
+    border:1px solid #C5AC2D;
+}
+
+
+ /*  Footer  */
+
+
+ .footer{
+    background-color: #332208;
+    width: 100%;
+}
+
+.footer__inner{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.footer__logo-block{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom:25px;
+}
+
+.footer__logo{
+    margin: 0 15px;
+}
+
+.footer-btn{
+    background-color:#C5AC2D;
+    font-size: 16px;
+    padding:15px 0;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    border:1px solid transparent;
+    transition: all .3s;
+}
+
+.footer-btn:hover{
+    background-color:#FEFEFE;
+    color:#C5AC2D;
+    border:1px solid #C5AC2D;
+}
+
+
+ /*  Media  */
+
+
+ 
