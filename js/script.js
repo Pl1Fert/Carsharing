@@ -35,3 +35,10 @@ function makeTimer(){
     show_slides(slide_index);
     },2000);
 }
+
+let menu = document.querySelector(".navbar");
+let top_content = document.querySelector(".top__content");
+function toggle_button(){
+    menu.classList.toggle('navbar-toggle');
+    top_content.classList.toggle('top__content-down');
+}
