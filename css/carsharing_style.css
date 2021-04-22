@@ -960,3 +960,29 @@ li {
         margin: 15px auto;
     }
 }
+
+@media (max-width:440px) {
+    .top__bottom-links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top__link{
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .reviews__slider-item:nth-child(2){
+        display: none;
+    }
+
+    .feedback__form{
+        position: relative;
+    }
+    .feedback__btn{
+        position: absolute;
+        bottom: 10%;
+        padding: 15px 0 0 0;
+    }
+
+}
